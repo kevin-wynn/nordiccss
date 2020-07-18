@@ -4,6 +4,7 @@
   "description": "A simple css framework inspired by Scandinavian design",
   "main": "index.js",
   "scripts": {
+    "build": "node-sass ./styles/main.scss -o ./dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,5 +23,8 @@
   "homepage": "https://github.com/kevin-wynn/nordiccss#readme",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
+  },
+  "dependencies": {
+    "node-sass": "^4.14.1"
   }
 }
