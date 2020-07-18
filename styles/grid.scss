@@ -6,6 +6,7 @@ $gutter-width: 1%;
   margin-right: auto;
   margin-left: auto;
   max-width: 1140px;
+  width: 100%;
 
   .row {
     display: flex;
@@ -31,14 +32,6 @@ $gutter-width: 1%;
       flex-direction: column;
       margin-right: calc(#{$gutter-width/2});
       margin-left: calc(#{$gutter-width/2});
-
-      .grid-column {
-        flex-direction: column;
-      }
-
-      .grid-row {
-        flex-direction: row;
-      }
     }
 
     .grid-1 {
@@ -133,6 +126,7 @@ $gutter-width: 1%;
 
 .grid-fluid {
   max-width: 100%;
+  width: 100%;
 }
 
 .center-horizontal {
@@ -141,4 +135,22 @@ $gutter-width: 1%;
 
 .center-vertical {
   align-items: center;
+}
+
+.column {
+  width: 100%;
+  flex-direction: column;
+}
+
+.row {
+  width: 100%;
+  flex-direction: row;
+}
+
+.flex-inline {
+  display: inline-flex;
+}
+
+.fixed {
+  position: fixed;
 }

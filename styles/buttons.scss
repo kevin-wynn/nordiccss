@@ -18,23 +18,26 @@
     font-size: 16px;
     color: $white;
     cursor: pointer;
-    transition: .2s ease all;
     display: inline-flex;
+
+    &:hover {
+      transition: .2s ease all;
+    }
   }
 
   .submit {
-    background-color: $blue2;
+    background-color: $blue1;
 
     &:hover {
-      background-color: $blue3;
+      background-color: $blue2;
     }
   }
 
   .cancel {
-    background-color: $red2;
+    background-color: $red1;
 
     &:hover {
-      background-color: $red3;
+      background-color: $red2;
     }
   }
 

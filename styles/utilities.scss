@@ -18,3 +18,10 @@ $border-radius-large: 15px;
 .box-shadow {
   box-shadow: $box-shadow;
 }
+
+.smooth-hover-transition {
+
+  &:hover {
+    transition: .2s ease all;
+  }
+}
