@@ -1,0 +1,144 @@
+@import 'variables';
+
+$gutter-width: 1%;
+
+.grid-container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1140px;
+
+  .row {
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .grid-1,
+    .grid-2,
+    .grid-3,
+    .grid-4,
+    .grid-5,
+    .grid-6,
+    .grid-8,
+    .grid-9,
+    .grid-10,
+    .grid-11,
+    .grid-12 {
+      flex: 0 0 auto;
+      display: flex;
+      flex-grow: 1;
+      flex-basis: 0;
+      flex-direction: column;
+      margin-right: calc(#{$gutter-width/2});
+      margin-left: calc(#{$gutter-width/2});
+
+      .grid-column {
+        flex-direction: column;
+      }
+
+      .grid-row {
+        flex-direction: row;
+      }
+    }
+
+    .grid-1 {
+      flex-basis: calc(8.33333333% - #{$gutter-width});
+      max-width: calc(8.33333333% - #{$gutter-width});
+    }
+
+    .grid-2 {
+      flex-basis: calc(16.66666667% - #{$gutter-width});
+      max-width: calc(16.66666667% - #{$gutter-width});
+    }
+
+    .grid-3 {
+      flex-basis: calc(25% - #{$gutter-width});
+      max-width: calc(25% - #{$gutter-width});
+    }
+
+    .grid-4 {
+      flex-basis: calc(33.33333333% - #{$gutter-width});
+      max-width: calc(33.33333333% - #{$gutter-width});
+    }
+
+    .grid-5 {
+      flex-basis: calc(41.66666667% - #{$gutter-width});
+      max-width: calc(41.66666667% - #{$gutter-width});
+    }
+
+    .grid-6 {
+      flex-basis: calc(50% - #{$gutter-width});
+      max-width: calc(50% - #{$gutter-width});
+    }
+
+    .grid-7 {
+      flex-basis: calc(58.33333333% - #{$gutter-width});
+      max-width: calc(58.33333333% - #{$gutter-width});
+    }
+
+    .grid-8 {
+      flex-basis: calc(66.66666667% - #{$gutter-width});
+      max-width: calc(66.66666667% - #{$gutter-width});
+    }
+
+    .grid-9 {
+      flex-basis: calc(75% - #{$gutter-width});
+      max-width: calc(75% - #{$gutter-width});
+    }
+
+    .grid-10 {
+      flex-basis: calc(83.33333333% - #{$gutter-width});
+      max-width: calc(83.33333333% - #{$gutter-width});
+    }
+
+    .grid-11 {
+      flex-basis: calc(91.66666667% - #{$gutter-width});
+      max-width: calc(91.66666667% - #{$gutter-width});
+    }
+
+    .grid-12 {
+      flex-basis: calc(100% - #{$gutter-width});
+      max-width: calc(100% - #{$gutter-width});
+    }
+  }
+
+  .padding-small {
+    padding: $padding-small;
+  }
+
+  .padding-medium {
+    padding: $padding-medium;
+  }
+
+  .padding-large {
+    padding: $padding-large;
+  }
+
+  .margin-small {
+    margin: $margin-small;
+  }
+
+  .margin-medium {
+    margin: $margin-medium;
+  }
+
+  .margin-large {
+    margin: $margin-large;
+  }
+
+  .grid-center {
+    justify-content: center;
+  }
+}
+
+.grid-fluid {
+  max-width: 100%;
+}
+
+.center-horizontal {
+  justify-content: center;
+}
+
+.center-vertical {
+  align-items: center;
+}

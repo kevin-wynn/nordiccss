@@ -1,0 +1,220 @@
+@import 'variables';
+@import 'utilities';
+@import 'colors';
+
+.button-container {
+
+  .button-group {
+    margin-top: $margin-medium;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .button {
+    border: 0;
+    border-radius: $border-radius-small;
+    padding: $padding-small $padding-medium;
+    font-size: 16px;
+    color: $white;
+    cursor: pointer;
+    transition: .2s ease all;
+    display: inline-flex;
+  }
+
+  .submit {
+    background-color: $blue2;
+
+    &:hover {
+      background-color: $blue3;
+    }
+  }
+
+  .cancel {
+    background-color: $red2;
+
+    &:hover {
+      background-color: $red3;
+    }
+  }
+
+  .bg-color-white {
+    &:hover {
+      background-color: darken($white, 10%);
+    }
+  }
+
+  .bg-color-black {
+    &:hover {
+      background-color: black;
+    }
+  }
+
+  .bg-color-pink1 {
+    &:hover {
+      background-color: darken($pink1, 10%);
+    }
+  }
+
+  .bg-color-pink2 {
+    &:hover {
+      background-color: darken($pink2, 10%);
+    }
+  }
+
+  .bg-color-pink3 {
+    &:hover {
+      background-color: darken($pink3, 10%);
+    }
+  }
+
+  .bg-color-pink4 {
+    &:hover {
+      background-color: darken($pink4, 10%);
+    }
+  }
+
+  .bg-color-blue1 {
+    &:hover {
+      background-color: darken($blue1, 10%);
+    }
+  }
+
+  .bg-color-blue2 {
+    &:hover {
+      background-color: darken($blue2, 10%);
+    }
+  }
+
+  .bg-color-blue3 {
+    &:hover {
+      background-color: darken($blue3, 10%);
+    }
+  }
+
+  .bg-color-blue4 {
+    &:hover {
+      background-color: darken($blue4, 10%);
+    }
+  }
+
+  .bg-color-red1 {
+    &:hover {
+      background-color: darken($red1, 10%);
+    }
+  }
+
+  .bg-color-red2 {
+    &:hover {
+      background-color: darken($red2, 10%);
+    }
+  }
+
+  .bg-color-red3 {
+    &:hover {
+      background-color: darken($red3, 10%);
+    }
+  }
+
+  .bg-color-red4 {
+    &:hover {
+      background-color: darken($red4, 10%);
+    }
+  }
+
+  .bg-color-green1 {
+    &:hover {
+      background-color: darken($green1, 10%);
+    }
+  }
+
+  .bg-color-green2 {
+    &:hover {
+      background-color: darken($green2, 10%);
+    }
+  }
+
+  .bg-color-green3 {
+    &:hover {
+      background-color: darken($green3, 10%);
+    }
+  }
+
+  .bg-color-green4 {
+    &:hover {
+      background-color: darken($green4, 10%);
+    }
+  }
+
+  .bg-color-orange1 {
+    &:hover {
+      background-color: darken($orange1, 10%);
+    }
+  }
+
+  .bg-color-orange2 {
+    &:hover {
+      background-color: darken($orange2, 10%);
+    }
+  }
+
+  .bg-color-orange3 {
+    &:hover {
+      background-color: darken($orange3, 10%);
+    }
+  }
+
+  .bg-color-orange4 {
+    &:hover {
+      background-color: darken($orange4, 10%);
+    }
+  }
+
+  .bg-color-yellow1 {
+    &:hover {
+      background-color: darken($yellow1, 10%);
+    }
+  }
+
+  .bg-color-yellow2 {
+    &:hover {
+      background-color: darken($yellow2, 10%);
+    }
+  }
+
+  .bg-color-yellow3 {
+    &:hover {
+      background-color: darken($yellow3, 10%);
+    }
+  }
+
+  .bg-color-yellow4 {
+    &:hover {
+      background-color: darken($yellow4, 10%);
+    }
+  }
+
+  .bg-color-grey1 {
+    &:hover {
+      background-color: darken($grey1, 10%);
+    }
+  }
+
+  .bg-color-grey2 {
+    &:hover {
+      background-color: darken($grey2, 10%);
+    }
+  }
+
+  .bg-color-grey3 {
+    &:hover {
+      background-color: darken($grey3, 10%);
+    }
+  }
+
+  .bg-color-grey4 {
+    &:hover {
+      background-color: darken($grey4, 10%);
+    }
+  }
+}

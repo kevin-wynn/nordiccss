@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nordic CSS</title>
+    <link rel="stylesheet" href="dist/nordic.css" />
+  </head>
+
+  <body>
+    <div class="grid-container grid-fluid">
+      <div class="row grid-center padding-large">
+        <div class="grid-6">
+          <h1 class="text-headline">Nordic CSS</h1>
+          <p>
+            A simple, useful, aesthetic, and deliberate CSS framework for
+            building a cleaner web.
+          </p>
+          <div class="spacer-25 bg-color-red2"></div>
+        </div>
+      </div>
+    </div>
+    <div class="spacer-50"></div>
+    <div class="grid-container">
+      <h3>Installation</h3>
+      <p>
+        Install with
+        <span class="code">npm install @kevin-wynn/nordiccss@0.1.0</span>
+      </p>
+      <p>Reference in your application's html like:</p>
+      <p>
+        <span class="code"
+          >&ltlink rel="stylesheet" href="nordic.css" /&gt</span
+        >
+      </p>
+    </div>
+    <div class="spacer-50"></div>
+    <div class="grid-container">
+      <h2>The Grid</h2>
+      <p>
+        The grid is built upon a very simple basis of a 12 column grid. Using
+        the style of <span class="code">grid-*</span> you can replace each grid
+        with 1-12 for your column size. Each grid has <b>no padding</b> and
+        <b>no margins</b> but comes completely mobile friendly. We will discuss
+        padding and margins in the next section.
+      </p>
+      <p>
+        <b>Note:</b> Grids must be placed within a
+        <span class="code">grid-container</span> and nested within a
+        <span class="code">row</span> div. For example:
+      </p>
+      <pre class="margin-bottom-medium">
+      <code>&ltdiv class="grid-container"&gt
+    &ltdiv class="row"&gt
+        &ltdiv class="grid-6"&gt&lt/div&gt
+    &lt/div&gt
+&lt/div&gt</code>
+    </pre>
+      <div class="row margin-bottom-small">
+        <div class="grid-1 text-white bg-color-blue2 padding-small">
+          grid-1
+        </div>
+        <div class="grid-4 text-white bg-color-blue2 padding-small">
+          grid-4
+        </div>
+        <div class="grid-4 text-white bg-color-blue2 padding-small">
+          grid-4
+        </div>
+        <div class="grid-3 text-white bg-color-blue2 padding-small">
+          grid-3
+        </div>
+      </div>
+      <div class="row margin-bottom-small">
+        <div class="grid-1 text-white bg-color-blue2 padding-small">
+          grid-1
+        </div>
+        <div class="grid-6 text-white bg-color-blue2 padding-small">
+          grid-6
+        </div>
+        <div class="grid-4 text-white bg-color-blue2 padding-small">
+          grid-4
+        </div>
+        <div class="grid-1 text-white bg-color-blue2 padding-small">
+          grid-1
+        </div>
+      </div>
+      <div class="row margin-bottom-small">
+        <div class="grid-6 text-white bg-color-blue2 padding-small">
+          grid-6
+        </div>
+        <div class="grid-6 text-white bg-color-blue2 padding-small">
+          grid-6
+        </div>
+      </div>
+    </div>
+    <div class="spacer-50"></div>
+    <div class="grid-container">
+      <h2>Margin and Padding</h2>
+      <p>
+        Margins and padding are set up to give a very white space oriented feel.
+        Open and airy is ideal here in order to dray more attention to the
+        actual content. There are 3 different sizes for each margin and padding;
+        <b>small, medium, and large.</b>
+      </p>
+      <p>
+        <b>Note:</b> You can also define specific margin and padding directions.
+        For example: <span class="code">margin-bottom-small</span> or
+        <span class="code">margin-right-medium</span>, etc...
+      </p>
+      <div class="row">
+        <div class="grid-12 margin-bottom-small">
+          <h3>Margin</h3>
+          <p class="margin-small bg-color-blue2 text-white padding-small">
+            margin-small 12px
+          </p>
+          <p class="margin-medium bg-color-blue2 text-white padding-small">
+            margin-medium 24px
+          </p>
+          <p class="margin-large bg-color-blue2 text-white padding-small">
+            margin-large 36px
+          </p>
+        </div>
+        <div class="grid-12">
+          <h3>Padding</h3>
+          <p class="margin-small bg-color-blue2 text-white padding-small">
+            padding-small 12px
+          </p>
+          <p class="margin-small bg-color-blue2 text-white padding-medium">
+            padding-medium 24px
+          </p>
+          <p class="margin-small bg-color-blue2 text-white padding-large">
+            padding-large 36px
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="spacer-50"></div>
+    <div class="grid-container">
+      <h2>Spacers</h2>
+      <p>
+        Nordic CSS comes with a few basic spacers that can be used to space out
+        content. Allowing for even more white space between sections. You can
+        also double these spacers with background colors to add a nice color
+        block.
+      </p>
+      <p>Spacers come in a variety of sizes as well.</p>
+      <div class="row">
+        <div class="grid-1"></div>
+        <div class="grid-2 padding-small">
+          <span class="code text-small margin-bottom-small"
+            >&lt;div class="spacer-10"&gt;&lt/div&gt</span
+          >
+          <div class="spacer-10 bg-color-blue2"></div>
+        </div>
+        <div class="grid-2 padding-small">
+          <span class="code text-small margin-bottom-small"
+            >&lt;div class="spacer-25"&gt;&lt/div&gt</span
+          >
+          <div class="spacer-25 bg-color-blue2"></div>
+        </div>
+        <div class="grid-2 padding-small">
+          <span class="code text-small margin-bottom-small"
+            >&lt;div class="spacer-50"&gt;&lt/div&gt</span
+          >
+          <div class="spacer-50 bg-color-blue2"></div>
+        </div>
+        <div class="grid-2 padding-small">
+          <span class="code text-small margin-bottom-small"
+            >&lt;div class="spacer-75"&gt;&lt/div&gt</span
+          >
+          <div class="spacer-75 bg-color-blue2"></div>
+        </div>
+        <div class="grid-2 padding-small">
+          <span class="code text-small margin-bottom-small"
+            >&lt;div class="spacer-100"&gt;&lt/div&gt</span
+          >
+          <div class="spacer-100 bg-color-blue2"></div>
+        </div>
+        <div class="grid-1"></div>
+      </div>
+    </div>
+    <div class="spacer-50"></div>
+    <div class="grid-container">
+      <h2>Border Radius</h2>
+      <p>
+        There are 3 different weights of border radius, in style with margins we
+        have small, medium, and large.
+      </p>
+      <div class="row">
+        <div
+          class="grid-4 text-center bg-color-blue2 border-radius-small center-horizontal"
+        >
+          <div class="spacer-50 text-white center-horizontal">
+            border-radius-small
+          </div>
+        </div>
+        <div
+          class="grid-4 text-center bg-color-blue2 border-radius-medium center-horizontal"
+        >
+          <div class="spacer-50 text-white center-horizontal">
+            border-radius-medium
+          </div>
+        </div>
+        <div
+          class="grid-4 text-center bg-color-blue2 border-radius-large center-horizontal"
+        >
+          <div class="spacer-50 text-white center-horizontal">
+            border-radius-large
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="spacer-50"></div>
+    <div class="grid-container">
+      <h2>Colors</h2>
+      <p>
+        Nordic CSS Utilizes 4 shades for each color available. Varrying between
+        1-4, 1 being the lightest and 4 being the darkest of the colors. The
+        colors are as follows...
+      </p>
+      <div class="row margin-bottom-small">
+        <div class="grid-3">
+          <div
+            class="spacer-100 text-white center-horizontal center-vertical bg-color-pink1 text-center"
+          >
+            pink1<br />
+            #f2c9c9
+          </div>
+        </div>
+        <div class="grid-3">
+          <div
+            class="spacer-100 text-white center-horizontal center-vertical bg-color-pink2 text-center"
+          >
+            pink2<br />
+            #f29bab
+          </div>
+        </div>
+        <div class="grid-3">
+          <div
+            class="spacer-100 text-white center-horizontal center-vertical bg-color-pink3 text-center"
+          >
+            pink3<br />
+            #f48282
+          </div>
+        </div>
+        <div class="grid-3">
+          <div
+            class="spacer-100 text-white center-horizontal center-vertical bg-color-pink4 text-center"
+          >
+            pink4<br />
+            #733d3d
+          </div>
+        </div>
+      </div>
+      <div class="row margin-bottom-small">
+        <div class="grid-3">
+          <div
+            class="spacer-100 text-white center-horizontal center-vertical bg-color-blue1 text-center"
+          >
+            blue1<br />
+            #0476d9
+          </div>
+        </div>
+        <div class="grid-3">
+          <div
+            class="spacer-100 text-white center-horizontal center-vertical bg-color-blue2 text-center"
+          >
+            blue2<br />
+            #0460d9
+          </div>
+        </div>
+        <div class="grid-3">
+          <div
+            class="spacer-100 text-white center-horizontal center-vertical bg-color-blue3 text-center"
+          >
+            blue3<br />
+            #044bd9
+          </div>
+        </div>
+        <div class="grid-3">
+          <div
+            class="spacer-100 text-white center-horizontal center-vertical bg-color-blue4 text-center"
+          >
+            blue4<br />
+            #0742f2
+          </div>
+        </div>
+      </div>
+      <div class="row margin-bottom-small">
+        <div class="grid-3">
+          <div
+            class="spacer-100 text-white center-horizontal center-vertical bg-color-red1 text-center"
+          >
+            red1<br />
+            #f24b4b
+          </div>
+        </div>
+        <div class="grid-3">
+          <div
+            class="spacer-100 text-white center-horizontal center-vertical bg-color-red2 text-center"
+          >
+            red2<br />
+            #f22727
+          </div>
+        </div>
+        <div class="grid-3">
+          <div
+            class="spacer-100 text-white center-horizontal center-vertical bg-color-red3 text-center"
+          >
+            red3<br />
+            #BF1F1F
+          </div>
+        </div>
+        <div class="grid-3">
+          <div
+            class="spacer-100 text-white center-horizontal center-vertical bg-color-red4 text-center"
+          >
+            red4<br />
+            #731212
+          </div>
+        </div>
+      </div>
+      <div class="row margin-bottom-small">
+        <div class="grid-3">
+          <div
+            class="spacer-100 text-white center-horizontal center-vertical bg-color-green1 text-center"
+          >
+            green1<br />
+            #567d7d
+          </div>
+        </div>
+        <div class="grid-3">
+          <div
+            class="spacer-100 text-white center-horizontal center-vertical bg-color-green2 text-center"
+          >
+            green2<br />
+            #3e5948
+          </div>
+        </div>
+        <div class="grid-3">
+          <div
+            class="spacer-100 text-white center-horizontal center-vertical bg-color-green3 text-center"
+          >
+            green3<br />
+            #1d4a4a
+          </div>
+        </div>
+        <div class="grid-3">
+          <div
+            class="spacer-100 text-white center-horizontal center-vertical bg-color-green4 text-center"
+          >
+            green4<br />
+            #213030
+          </div>
+        </div>
+      </div>
+      <div class="row margin-bottom-small">
+        <div class="grid-3">
+          <div
+            class="spacer-100 text-white center-horizontal center-vertical bg-color-orange1 text-center"
+          >
+            orange1<br />
+            #f0b47f
+          </div>
+        </div>
+        <div class="grid-3">
+          <div
+            class="spacer-100 text-white center-horizontal center-vertical bg-color-orange2 text-center"
+          >
+            orange2<br />
+            #ff8f61
+          </div>
+        </div>
+        <div class="grid-3">
+          <div
+            class="spacer-100 text-white center-horizontal center-vertical bg-color-orange3 text-center"
+          >
+            orange3<br />
+            #cc714e
+          </div>
+        </div>
+        <div class="grid-3">
+          <div
+            class="spacer-100 text-white center-horizontal center-vertical bg-color-orange4 text-center"
+          >
+            orange4<br />
+            #804730
+          </div>
+        </div>
+      </div>
+      <div class="row margin-bottom-small">
+        <div class="grid-3">
+          <div
+            class="spacer-100 text-white center-horizontal center-vertical bg-color-yellow1 text-center"
+          >
+            yellow1<br />
+            #ffe14a
+          </div>
+        </div>
+        <div class="grid-3">
+          <div
+            class="spacer-100 text-white center-horizontal center-vertical bg-color-yellow2 text-center"
+          >
+            yellow2<br />
+            #f2d22e
+          </div>
+        </div>
+        <div class="grid-3">
+          <div
+            class="spacer-100 text-white center-horizontal center-vertical bg-color-yellow3 text-center"
+          >
+            yellow3<br />
+            #f2b807
+          </div>
+        </div>
+        <div class="grid-3">
+          <div
+            class="spacer-100 text-white center-horizontal center-vertical bg-color-yellow4 text-center"
+          >
+            yellow4<br />
+            #f2a622
+          </div>
+        </div>
+      </div>
+      <div class="row margin-bottom-small">
+        <div class="grid-3">
+          <div
+            class="spacer-100 text-black center-horizontal center-vertical bg-color-grey1 text-center"
+          >
+            grey1<br />
+            #f2f2f2
+          </div>
+        </div>
+        <div class="grid-3">
+          <div
+            class="spacer-100 text-white center-horizontal center-vertical bg-color-grey2 text-center"
+          >
+            grey2<br />
+            #b3b3b3
+          </div>
+        </div>
+        <div class="grid-3">
+          <div
+            class="spacer-100 text-white center-horizontal center-vertical bg-color-grey3 text-center"
+          >
+            grey3<br />
+            #737373
+          </div>
+        </div>
+        <div class="grid-3">
+          <div
+            class="spacer-100 text-white center-horizontal center-vertical bg-color-grey4 text-center"
+          >
+            grey4<br />
+            #454545
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="grid-6">
+          <div
+            class="spacer-100 text-black center-horizontal center-vertical bg-color-white text-center"
+          >
+            white<br />
+            #ffffff
+          </div>
+        </div>
+        <div class="grid-6">
+          <div
+            class="spacer-100 text-white center-horizontal center-vertical bg-color-black text-center"
+          >
+            black<br />
+            #111111
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="spacer-50"></div>
+    <div class="grid-container">
+      <h2>Forms and Buttons</h2>
+      <p>
+        Nordic CSS has a few stylings for forms and buttons, utilizing some of
+        the colors available for button classes. The forms utlize a few classes
+        to define full width inputs or inline inputs. There are a few
+        pre-defined classes for buttons such as
+        <span class="code">submit</span> and <span class="code">cancel</span>.
+        However you can define any of the available colors with syntax like
+        so...
+      </p>
+      <pre>
+      <code>&ltdiv class="button-group"&gt
+  &ltdiv class="button green2"&gt
+    Submit
+  &lt/div&gt
+&lt/div&gt</code>
+    </pre>
+      <div class="button-container margin-top-medium">
+        <button class="button bg-color-green2">Submit</button>
+      </div>
+      <p class="margin-top-medium">And an example of a form:</p>
+      <pre>
+      <code>&ltform class="form-container"&gt
+  &ltp class="text-grey3"&gtWelcome to Nordic CSS. This is an example form.&lt/p&gt
+  &ltdiv class="input-group margin-bottom-small"&gt
+    &ltdiv class="input"&gt
+      &ltlabel for="firstName">First Name&lt/label&gt
+      &ltinput name="firstName" type="text" /&gt
+    &lt/div&gt
+    &ltdiv class="input error"&gt
+      &ltlabel for="lastName">Last Name&lt/label&gt
+      &ltspan class="text-small text-red2">Error Message&lt/span&gt
+      &ltinput name="lastName" type="text" /&gt
+    &lt/div&gt
+  &lt/div&gt
+  &ltdiv class="input"&gt
+    &ltlabel for="email">Email&lt/label&gt
+    &ltinput name="email" type="text" /&gt
+  &lt/div&gt
+  &ltdiv class="button-container"&gt
+    &ltdiv class="button-group"&gt
+      &ltbutton class="button submit">Submit&lt/button&gt
+      &ltbutton class="button cancel">Cancel&lt/button&gt
+    &lt/div&gt
+  &lt/div&gt
+&lt/form&gt</code>
+    </pre>
+      <div class="row margin-top-medium">
+        <div class="grid-6">
+          <form class="form-container">
+            <p class="text-grey3">
+              Welcome to Nordic CSS. This is an example form.
+            </p>
+            <div class="input-group margin-bottom-small">
+              <div class="input">
+                <label for="firstName">First Name</label>
+                <input name="firstName" type="text" />
+              </div>
+              <div class="input error">
+                <label for="lastName">Last Name</label>
+                <span class="text-small text-red2">Error Message</span>
+                <input name="lastName" type="text" />
+              </div>
+            </div>
+            <div class="input">
+              <label for="email">Email</label>
+              <input name="email" type="text" />
+            </div>
+            <div class="button-container">
+              <div class="button-group">
+                <button class="button submit">Submit</button>
+                <button class="button cancel">Cancel</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="grid-4"></div>
+      </div>
+    </div>
+  </body>
+</html>

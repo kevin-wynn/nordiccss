@@ -1,0 +1,54 @@
+@import 'variables';
+@import 'utilities';
+
+.form-container {
+  padding: $padding-small;
+  display: flex;
+  flex-direction: column;
+  box-shadow: $box-shadow;
+  padding: $padding-medium;
+  border-radius: $border-radius-medium;
+  border: 1px solid $grey1;
+
+  .input-group {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+
+    .input {
+      margin-right: $margin-small;
+      width: 50%;
+    }
+  }
+
+  .input {
+    display: flex;
+    flex-direction: column;
+
+    &.error {
+      input {
+        border: 2px solid $red2;
+      }
+    }
+
+    label {
+      margin-right: $margin-small;
+      margin-bottom: $margin-small;
+    }
+
+    input {
+      padding: $padding-small;
+      border: 2px solid $grey2;
+      flex-grow: 1;
+      font-size: 16px;
+      max-height: 50px;
+      border-radius: $border-radius-small;
+
+      &:focus,
+      &:active {
+        outline: 0;
+        border: 2px solid $blue2;
+      }
+    }
+  }
+}
