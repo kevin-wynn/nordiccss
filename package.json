@@ -1,5 +1,5 @@
 {
-  "name": "nordiccss",
+  "name": "@kevin-wynn/nordiccss",
   "version": "0.1.0",
   "description": "A simple css framework inspired by Scandinavian design",
   "main": "index.js",
