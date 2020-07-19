@@ -1,6 +1,6 @@
 {
   "name": "@kevin-wynn/nordiccss",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A simple, useful, aesthetically pleasing, and deliberate CSS framework for building a cleaner web",
   "main": "index.js",
   "scripts": {
