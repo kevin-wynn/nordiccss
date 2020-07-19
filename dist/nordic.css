@@ -454,12 +454,16 @@ b {
   font-weight: bold; }
 
 pre {
-  display: flex; }
+  display: flex;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  text-align: justify; }
 
 pre code {
   background-color: #f2f2f2;
   line-height: 160%;
   display: inline-flex;
+  width: 100%;
   padding: 12px;
   border: 1px solid #b3b3b3;
   font-family: 'Courier New', Courier, monospace; }
@@ -470,7 +474,10 @@ pre code {
   font-size: 16px;
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
-  display: inline-flex; }
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  text-align: justify;
+  width: 100%; }
 
 .text-headline {
   font-size: 60px; }
@@ -1276,6 +1283,12 @@ ul.no-bullets li {
     .form-container .input-group .input {
       margin-right: 12px;
       width: 50%; }
+  @media (max-width: 768px) {
+    .form-container .input-group {
+      flex-direction: column;
+      align-items: inherit; }
+      .form-container .input-group .input {
+        width: 100%; } }
   .form-container .input {
     display: flex;
     flex-direction: column; }
@@ -1729,6 +1742,11 @@ ul.no-bullets li {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
+  @media (max-width: 768px) {
+    .button-container .button-group {
+      flex-wrap: wrap; }
+      .button-container .button-group .button {
+        margin-bottom: 12px; } }
 
 .button-container .button {
   border: 0;

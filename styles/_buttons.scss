@@ -9,6 +9,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+
+      .button {
+        margin-bottom: $margin-small;
+      }
+    }
   }
 
   .button {

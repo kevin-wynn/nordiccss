@@ -47,12 +47,16 @@ b {
 
 pre {
   display: flex;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  text-align: justify;
 }
 
 pre code {
   background-color: $grey1;
   line-height: 160%;
   display: inline-flex;
+  width: 100%;
   padding: $padding-small;
   border: 1px solid $grey2;
   font-family: 'Courier New', Courier, monospace;
@@ -64,7 +68,10 @@ pre code {
   font-size: 16px;
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
-  display: inline-flex;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  text-align: justify;
+  width: 100%;
 }
 
 .text-headline {
