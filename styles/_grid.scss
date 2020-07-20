@@ -198,4 +198,8 @@ $gutter-width: 1%;
   .show-responsive {
     display: flex !important;
   }
+
+  .center-responsive {
+    justify-content: center;
+  }
 }
