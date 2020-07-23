@@ -1,7 +1,370 @@
+@import './variables';
+@import './colors';
+
 $box-shadow: 5px 5px 15px rgba(0, 0, 0, .2);
 $border-radius-small: 5px;
 $border-radius-medium: 10px;
 $border-radius-large: 15px;
+
+.border-small-pink1 {
+  border: 1px solid $pink1;
+}
+
+.border-small-pink2 {
+  border: 1px solid $pink2;
+}
+
+.border-small-pink3 {
+  border: 1px solid $pink3;
+}
+
+.border-small-pink4 {
+  border: 1px solid $pink4;
+}
+
+.border-medium-pink1 {
+  border: 3px solid $pink1;
+}
+
+.border-medium-pink2 {
+  border: 3px solid $pink2;
+}
+
+.border-medium-pink3 {
+  border: 3px solid $pink3;
+}
+
+.border-medium-pink4 {
+  border: 3px solid $pink4;
+}
+
+.border-large-pink1 {
+  border: 5px solid $pink1;
+}
+
+.border-large-pink2 {
+  border: 5px solid $pink2;
+}
+
+.border-large-pink3 {
+  border: 5px solid $pink3;
+}
+
+.border-large-pink4 {
+  border: 5px solid $pink4;
+}
+
+.border-small-blue1 {
+  border: 1px solid $blue1;
+}
+
+.border-small-blue2 {
+  border: 1px solid $blue2;
+}
+
+.border-small-blue3 {
+  border: 1px solid $blue3;
+}
+
+.border-small-blue4 {
+  border: 1px solid $blue4;
+}
+
+.border-medium-blue1 {
+  border: 3px solid $blue1;
+}
+
+.border-medium-blue2 {
+  border: 3px solid $blue2;
+}
+
+.border-medium-blue3 {
+  border: 3px solid $blue3;
+}
+
+.border-medium-blue4 {
+  border: 3px solid $blue4;
+}
+
+.border-large-blue1 {
+  border: 5px solid $blue1;
+}
+
+.border-large-blue2 {
+  border: 5px solid $blue2;
+}
+
+.border-large-blue3 {
+  border: 5px solid $blue3;
+}
+
+.border-large-blue4 {
+  border: 5px solid $blue4;
+}
+
+.border-small-red1 {
+  border: 1px solid $red1;
+}
+
+.border-small-red2 {
+  border: 1px solid $red2;
+}
+
+.border-small-red3 {
+  border: 1px solid $red3;
+}
+
+.border-small-red4 {
+  border: 1px solid $red4;
+}
+
+.border-medium-red1 {
+  border: 3px solid $red1;
+}
+
+.border-medium-red2 {
+  border: 3px solid $red2;
+}
+
+.border-medium-red3 {
+  border: 3px solid $red3;
+}
+
+.border-medium-red4 {
+  border: 3px solid $red4;
+}
+
+.border-large-red1 {
+  border: 5px solid $red1;
+}
+
+.border-large-red2 {
+  border: 5px solid $red2;
+}
+
+.border-large-red3 {
+  border: 5px solid $red3;
+}
+
+.border-large-red4 {
+  border: 5px solid $red4;
+}
+
+.border-small-orange1 {
+  border: 1px solid $orange1;
+}
+
+.border-small-orange2 {
+  border: 1px solid $orange2;
+}
+
+.border-small-orange3 {
+  border: 1px solid $orange3;
+}
+
+.border-small-orange4 {
+  border: 1px solid $orange4;
+}
+
+.border-medium-orange1 {
+  border: 3px solid $orange1;
+}
+
+.border-medium-orange2 {
+  border: 3px solid $orange2;
+}
+
+.border-medium-orange3 {
+  border: 3px solid $orange3;
+}
+
+.border-medium-orange4 {
+  border: 3px solid $orange4;
+}
+
+.border-large-orange1 {
+  border: 5px solid $orange1;
+}
+
+.border-large-orange2 {
+  border: 5px solid $orange2;
+}
+
+.border-large-orange3 {
+  border: 5px solid $orange3;
+}
+
+.border-large-orange4 {
+  border: 5px solid $orange4;
+}
+
+.border-small-yellow1 {
+  border: 1px solid $yellow1;
+}
+
+.border-small-yellow2 {
+  border: 1px solid $yellow2;
+}
+
+.border-small-yellow3 {
+  border: 1px solid $yellow3;
+}
+
+.border-small-yellow4 {
+  border: 1px solid $yellow4;
+}
+
+.border-medium-yellow1 {
+  border: 3px solid $yellow1;
+}
+
+.border-medium-yellow2 {
+  border: 3px solid $yellow2;
+}
+
+.border-medium-yellow3 {
+  border: 3px solid $yellow3;
+}
+
+.border-medium-yellow4 {
+  border: 3px solid $yellow4;
+}
+
+.border-large-yellow1 {
+  border: 5px solid $yellow1;
+}
+
+.border-large-yellow2 {
+  border: 5px solid $yellow2;
+}
+
+.border-large-yellow3 {
+  border: 5px solid $yellow3;
+}
+
+.border-large-yellow4 {
+  border: 5px solid $yellow4;
+}
+
+.border-small-grey1 {
+  border: 1px solid $grey1;
+}
+
+.border-small-grey2 {
+  border: 1px solid $grey2;
+}
+
+.border-small-grey3 {
+  border: 1px solid $grey3;
+}
+
+.border-small-grey4 {
+  border: 1px solid $grey4;
+}
+
+.border-medium-grey1 {
+  border: 3px solid $grey1;
+}
+
+.border-medium-grey2 {
+  border: 3px solid $grey2;
+}
+
+.border-medium-grey3 {
+  border: 3px solid $grey3;
+}
+
+.border-medium-grey4 {
+  border: 3px solid $grey4;
+}
+
+.border-large-grey1 {
+  border: 5px solid $grey1;
+}
+
+.border-large-grey2 {
+  border: 5px solid $grey2;
+}
+
+.border-large-grey3 {
+  border: 5px solid $grey3;
+}
+
+.border-large-grey4 {
+  border: 5px solid $grey4;
+}
+
+.border-small-green1 {
+  border: 1px solid $green1;
+}
+
+.border-small-green2 {
+  border: 1px solid $green2;
+}
+
+.border-small-green3 {
+  border: 1px solid $green3;
+}
+
+.border-small-green4 {
+  border: 1px solid $green4;
+}
+
+.border-medium-green1 {
+  border: 3px solid $green1;
+}
+
+.border-medium-green2 {
+  border: 3px solid $green2;
+}
+
+.border-medium-green3 {
+  border: 3px solid $green3;
+}
+
+.border-medium-green4 {
+  border: 3px solid $green4;
+}
+
+.border-large-green1 {
+  border: 5px solid $green1;
+}
+
+.border-large-green2 {
+  border: 5px solid $green2;
+}
+
+.border-large-green3 {
+  border: 5px solid $green3;
+}
+
+.border-large-green4 {
+  border: 5px solid $green4;
+}
+
+.border-small-white {
+  border: 1px solid $white;
+}
+
+.border-small-black {
+  border: 1px solid $black;
+}
+
+.border-medium-white {
+  border: 3px solid $white;
+}
+
+.border-medium-black {
+  border: 3px solid $black;
+}
+
+.border-large-white {
+  border: 5px solid $white;
+}
+
+.border-large-black {
+  border: 5px solid $black;
+}
 
 .border-radius-small {
   border-radius: $border-radius-small;
